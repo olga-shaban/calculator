@@ -121,7 +121,6 @@ let colTwo = document.getElementsByClassName('first-row'); // первый ря�
 let colThree = document.getElementsByClassName('last-row'); // остальные кнопки
 let colorButton = document.getElementsByClassName('colorButton'); // цветные кнопки
 
-
 let colorFirst = ['#3C4021', '#022873', '#594622', '#696969'];
 let colorTwo = ['#8C8956', '#035AA6', '#F2B749', '#808080'];
 let colorThree = ['#A6A165', '#05C7F2', '#F2D852', '#A9A9A9'];
