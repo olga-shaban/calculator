@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!--  <link rel="stylesheet" href="style/style.css"> --> 
+    <title>Calkulator</title>
+    <style>
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   display: flex;
+   height: 100vh;
+}
+
+.calculator {
+   margin: auto;
+   border: 2px solid black;
+   box-shadow: 0 0 10px black;
+   border-radius: 10px;
+}
+
+.display {
+   padding: 15px;
+   font: 4em Impact;
+   color: aliceblue;
+   border: none;
+   outline: none;
+   width: auto;
+   text-align: right;
+}
+
+.row {
+   display: flex;
+}
+
+.button {
+   width: 100px;
+   height: 80px;
+   border: 1px solid rgb(100, 92, 92);
+   font: 3em Palatino bold;
+   color: aliceblue;
+   text-align: center;
+   outline: none;
+   cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+   opacity: 0.7;
+   transition: 0.5s;
+}
+
+.big-button {
+   width: 201.6px;
+}
+
+.color {
+   display: flex;
+   padding-left: 20px;
+}
+
+.red,
+.orange,
+.green {
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   margin: 5px;
+   cursor: pointer;
+}
+
+.red {
+   background-color: red;
+}
+
+.orange {
+   background-color: orange;
+}
+
+.green {
+   background-color: green;
+}
+
+.setting {
+   width: 25px;
+   margin-left: 250px;
+   margin-top: 5px;
+   cursor: pointer;
+}
+
+/* Цветовая схема приложения*/
+
+.first-color {
+   background-color: #696969;
+}
+
+.first-row {
+   background-color: #808080;
+}
+
+.last-row {
+   background-color: #A9A9A9;
+}
+
+.colorButton {
+   background-color: #FFA500;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+
+        <div class="row color first-color">
+            <div class="red" id="red"></div>
+            <div class="orange" id="orange"></div>
+            <div class="green" id="green"></div>
+
+            <img class="setting" src="img/RGB_Circle.svg" alt="settings" title="Изменить цвет приложения">
+        </div>
+        <div class="display first-color">
+            <p class="display-screen">0</p>
+        </div>
+
+        <div class="buttons">
+            <div class="row">
+                <div class="button first-row ac">AC</div>
+                <div class="button first-row">+/-</div>
+                <div class="button first-row">%</div>
+                <div class="button colorButton ">/</div>
+            </div>
+            <div class="row">
+                <div class="button last-row">7</div>
+                <div class="button last-row">8</div>
+                <div class="button last-row">9</div>
+                <div class="button colorButton ">x</div>
+            </div>
+            <div class="row">
+                <div class="button last-row">4</div>
+                <div class="button last-row">5</div>
+                <div class="button last-row">6</div>
+                <div class="button colorButton ">-</div>
+            </div>
+            <div class="row">
+                <div class="button last-row">1</div>
+                <div class="button last-row">2</div>
+                <div class="button last-row">3</div>
+                <div class="button colorButton ">+</div>
+            </div>
+
+            <div class="row">
+
+                <div class="button big-button last-row">0</div>
+                <div class="button last-row">.</div>
+                <div class="button colorButton ">=</div>
+
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="js/main.js"></script>
+
+</html>
