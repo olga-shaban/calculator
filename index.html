@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +21,8 @@ body {
    margin: auto;
    border: 2px solid black;
    box-shadow: 0 0 10px black;
-   border-radius: 10px;
+  border-radius: 10px;
+   
 }
 
 .display {
@@ -32,7 +32,12 @@ body {
    border: none;
    outline: none;
    width: auto;
-   text-align: right;
+   text-align: right;   
+}
+
+.display-screen {
+   width: 360px;
+   overflow-x: auto;
 }
 
 .row {
@@ -42,6 +47,9 @@ body {
 .button {
    width: 100px;
    height: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    border: 1px solid rgb(100, 92, 92);
    font: 3em Palatino bold;
    color: aliceblue;
@@ -57,12 +65,19 @@ body {
 }
 
 .big-button {
-   width: 201.6px;
+   width: 201px;
+   border-bottom-left-radius: 8px;
+}
+
+.button-last {
+   border-bottom-right-radius:  8px; 
 }
 
 .color {
    display: flex;
    padding-left: 20px;
+   border-top-left-radius:8px ;
+   border-top-right-radius: 8px;
 }
 
 .red,
@@ -72,8 +87,7 @@ body {
    height: 20px;
    border-radius: 50%;
    margin: 5px;
-   cursor: pointer;
-}
+  }
 
 .red {
    background-color: red;
@@ -111,9 +125,8 @@ body {
 .colorButton {
    background-color: #FFA500;
 }
-
-
     </style>
+    
 </head>
 
 <body>
@@ -155,14 +168,10 @@ body {
                 <div class="button last-row">3</div>
                 <div class="button colorButton ">+</div>
             </div>
-
             <div class="row">
-
                 <div class="button big-button last-row">0</div>
                 <div class="button last-row">.</div>
-                <div class="button colorButton ">=</div>
-
-
+                <div class="button colorButton button-last">=</div>
             </div>
         </div>
 
